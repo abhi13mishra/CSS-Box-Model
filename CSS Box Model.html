@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Box Model Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .box {
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .box1 {
+      background-color: #ffdddd;
+      padding: 20px;
+      border: 4px dashed #e60000;
+      margin: 10px;
+      width: 300px;
+      box-sizing: content-box; /* Padding and border add to total size */
+    }
+
+    .box2 {
+      background-color: #ddffdd;
+      padding: 30px;
+      border: 5px solid #00b300;
+      margin: 20px auto;
+      width: 300px;
+      box-sizing: border-box; /* Total size includes padding and border */
+    }
+
+    .box3 {
+      background-color: #ddeeff;
+      padding: 10px 40px;
+      border: 6px double #3399ff;
+      margin: 30px;
+      width: 250px;
+      /* Default box-sizing is content-box */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Box Model Demonstration</h2>
+
+  <div class="box box1">
+    <strong>Box 1</strong>
+  </div>
+
+  <div class="box box2">
+    <strong>Box 2</strong>
+  </div>
+
+  <div class="box box3">
+    <strong>Box 3</strong>
+  </div>
+
+</body>
+</html> 
